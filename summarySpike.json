@@ -1,0 +1,155 @@
+{
+    "metrics": {
+        "http_req_duration": {
+            "avg": 201.57043911622432,
+            "min": 99.0228,
+            "med": 200.98329999999999,
+            "max": 317.1735,
+            "p(90)": 281.9455,
+            "p(95)": 292.014725,
+            "thresholds": {
+                "p(95)<1000": false,
+                "p(99)<2000": false
+            }
+        },
+        "data_sent": {
+            "rate": 87153.53070619867,
+            "count": 9653602
+        },
+        "http_req_sending": {
+            "p(95)": 0,
+            "avg": 0.018698541896595616,
+            "min": 0,
+            "med": 0,
+            "max": 15.2779,
+            "p(90)": 0
+        },
+        "data_received": {
+            "count": 13941093,
+            "rate": 125861.36002431747
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "iterations": {
+            "count": 47116,
+            "rate": 425.36721036906806
+        },
+        "vus": {
+            "value": 21,
+            "min": 1,
+            "max": 300
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 6.0991,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.007706159266491214,
+            "min": 0
+        },
+        "iteration_duration": {
+            "p(95)": 702.3097250000001,
+            "avg": 452.63479874353067,
+            "min": 103.9125,
+            "med": 453.24120000000005,
+            "max": 805.4878,
+            "p(90)": 660.3958
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 47116,
+            "thresholds": {
+                "rate<0.05": false
+            },
+            "value": 0
+        },
+        "http_reqs": {
+            "count": 47116,
+            "rate": 425.36721036906806
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(90)": 281.9455,
+            "p(95)": 292.014725,
+            "avg": 201.57043911622432,
+            "min": 99.0228,
+            "med": 200.98329999999999,
+            "max": 317.1735
+        },
+        "http_req_blocked": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.014467454792427177,
+            "min": 0,
+            "med": 0,
+            "max": 20.1165
+        },
+        "http_req_waiting": {
+            "med": 200.8823,
+            "max": 316.6644,
+            "p(90)": 281.82415000000003,
+            "p(95)": 291.923675,
+            "avg": 201.44324749766605,
+            "min": 99.0228
+        },
+        "http_req_receiving": {
+            "p(95)": 0.6499,
+            "avg": 0.10849307666185608,
+            "min": 0,
+            "med": 0,
+            "max": 19.6277,
+            "p(90)": 0.52485
+        },
+        "checks": {
+            "passes": 188464,
+            "fails": 0,
+            "value": 1
+        },
+        "vus_max": {
+            "value": 300,
+            "min": 300,
+            "max": 300
+        }
+    },
+    "root_group": {
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "status é 201": {
+                    "id": "8c6175dbdf3afa2500fcd78a142689bc",
+                    "passes": 47116,
+                    "fails": 0,
+                    "name": "status é 201",
+                    "path": "::status é 201"
+                },
+                "resposta contém APPROVED": {
+                    "fails": 0,
+                    "name": "resposta contém APPROVED",
+                    "path": "::resposta contém APPROVED",
+                    "id": "c812147f9d780c8c41220ac34cdcd61c",
+                    "passes": 47116
+                },
+                "tempo de resposta < 1000ms": {
+                    "fails": 0,
+                    "name": "tempo de resposta < 1000ms",
+                    "path": "::tempo de resposta < 1000ms",
+                    "id": "66bc9d7eaaacf3914c5c5b75eb19b47e",
+                    "passes": 47116
+                },
+                "tempo de resposta < 2000ms": {
+                    "passes": 47116,
+                    "fails": 0,
+                    "name": "tempo de resposta < 2000ms",
+                    "path": "::tempo de resposta < 2000ms",
+                    "id": "10c2a096d2f67932f63ea092eae776a0"
+                }
+            },
+        "name": ""
+    }
+}
